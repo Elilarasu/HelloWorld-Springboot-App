@@ -1,4 +1,4 @@
-pipeline {
+ipeline {
     agent any
     stages{
         stage('Git clone'){
@@ -11,12 +11,7 @@ pipeline {
                 sh 'mvn package'
             }
         }  
-        stage('Creat Dockerimage'){
-            steps{
-                sh 'docker build -t thetips4you/springboot:latest .'
-         
-            }
-        }
+        
           
     }
 }
