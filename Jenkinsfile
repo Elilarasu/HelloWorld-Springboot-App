@@ -10,8 +10,10 @@ ipeline {
             steps{
                 sh 'mvn package'
             }
-        }  
+        } 
         
-          
     }
-}
+    
+}   
+       
+
